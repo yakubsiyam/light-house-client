@@ -1,13 +1,118 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Quicksand", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.text-prime {
+  color: #b044d8;
+}
+
+.btn-bg {
+  background-color: #b044d8;
+  color: #ffffff;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.btn-bg:hover {
+  color: #ffffff !important;
+}
+
+.text-shadow {
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.hover-text:hover {
+  color: #000 !important;
+}
+
+.banner-text-shadow {
+  text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
+}
+
+.box:hover {
+  box-shadow: 5px 5px 15px #949494 !important;
+  transition-duration: 0.2s;
+}
+
+.radius {
+  border-radius: 20px;
+}
+
+.btn-border-main {
+  color: #b044d8;
+  border: 1px solid #b044d8;
+  transition-duration: 0.2s;
+}
+
+.btn-border-main:hover {
+  background-color: #b044d8;
+  color: white;
+}
+
+.btn-prime {
+  background-color: #b044d8;
+  transition-duration: 0.2s;
+  color: white;
+}
+
+.btn-prime:hover {
+  background-color: #973cb8;
+  color: white;
+}
+
+.btn-google:hover {
+  box-shadow: 5px 5px 15px #919090 !important;
+  transition-duration: 0.2s;
+}
+
+/* 
+.btn-main{
+  background-color: #28c6be;
+  transition-duration: .2s;
+  color: white;
+}
+.btn-main:hover{
+  background-color: #27b3ac;
+  color: white;
+}
+.btn-outline-main{
+  color: #FF6E6D;
+  border: 1px solid #28c6be;
+  transition-duration: .2s;
+}
+.btn-outline-main:hover{
+  background-color: #28c6be;
+  color: white;
+}
+.text-second{
+  color: #858585;
+}
+.text-main{
+  color: #28c6be;
+}
+.border-main{
+  border-color: #28c6be !important;
+}
+.foo-hover:hover{
+  color: white;
+}
+.rounded-20{
+  border-radius: 20px;
+}
+.rounded-t-20{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.box:hover{
+  box-shadow: 5px 5px 15px #949494 !important;
+  transition-duration: .2s;
+} */
