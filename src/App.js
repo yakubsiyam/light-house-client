@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AuthProvider from "./contexts/AuthProvider/AuthProvider";
 import About from "./pages/About/About";
 import Home from "./pages/Home/Home/Home";
+import LampDetails from "./pages/Lamps/LampDetails/LampDetails";
 import Lamps from "./pages/Lamps/Lamps/Lamps";
 import Login from "./pages/login/Login/Login";
 import PrivateRoute from "./pages/login/PrivateRoute/PrivateRoute";
@@ -26,13 +27,17 @@ function App() {
               <Home></Home>
             </Route>
 
-            <PrivateRoute exact path="/about">
+            <Route exact path="/about">
               <About></About>
-            </PrivateRoute>
+            </Route>
 
             <Route exact path="/lamps">
               <Lamps></Lamps>
             </Route>
+
+            <PrivateRoute exact path="/lamps/:lampId">
+              <LampDetails></LampDetails>
+            </PrivateRoute>
 
             <Route exact path="/login">
               <Login></Login>

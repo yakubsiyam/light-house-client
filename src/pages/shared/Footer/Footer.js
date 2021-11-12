@@ -15,7 +15,7 @@ const Footer = () => {
                 src={logo}
                 alt="Logo here"
               />
-              <span className="text-prime">Light House</span>
+              <span className="text-prime text-shadow">Light House</span>
             </Link>
             <br />
             <small className="py-2 text-secondary">

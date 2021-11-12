@@ -5,7 +5,7 @@ const Lamps = () => {
   const [lamps, setLamps] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/lamps")
+    fetch("https://fierce-meadow-98744.herokuapp.com/lamps")
       .then((res) => res.json())
       .then((data) => setLamps(data));
   }, []);
@@ -14,7 +14,7 @@ const Lamps = () => {
     <div className="container">
       <div className="row justify-content-between g-4">
         {lamps.map((lamp) => (
-          <Lamp key={lamp.id} lamp={lamp}></Lamp>
+          <Lamp key={lamp._id} lamp={lamp}></Lamp>
         ))}
       </div>
     </div>

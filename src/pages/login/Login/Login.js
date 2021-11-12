@@ -28,7 +28,7 @@ const Login = () => {
   return (
     <div className="container mt-3">
       <div className="col-md-6 mx-auto shadow box radius p-3 p-md-5">
-        <h3 className="text-prime text-center fw-bold">Login</h3>
+        <h3 className="text-prime text-center fw-bold text-shadow">Login</h3>
         <form onSubmit={handleLoginSubmit}>
           <div>
             <label htmlFor="exampleFormControlInput1" className="form-label">
