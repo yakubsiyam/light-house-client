@@ -45,9 +45,9 @@ const LampDetails = () => {
       email,
       address,
       phone,
-      //   title,
-      //   location,
-      //   cost,
+      name,
+      img,
+      price,
       status,
     };
 
@@ -79,41 +79,47 @@ const LampDetails = () => {
           <h4 className="text-prime fw-bold">Price: $ {price}</h4>
 
           <h5 className="text-center my-2">Lamp Specifications</h5>
-          <ul class="list-group list-group-horizontal">
-            <li class="list-group-item flex-fill bg-light fw-bold">Color</li>
-            <li class="list-group-item flex-fill">{color}</li>
+          <ul className="list-group list-group-horizontal">
+            <li className="list-group-item flex-fill bg-light fw-bold">
+              Color
+            </li>
+            <li className="list-group-item flex-fill">{color}</li>
           </ul>
-          <ul class="list-group list-group-horizontal">
-            <li class="list-group-item flex-fill bg-light fw-bold">
+          <ul className="list-group list-group-horizontal">
+            <li className="list-group-item flex-fill bg-light fw-bold">
               Bulb Watt
             </li>
-            <li class="list-group-item flex-fill">{bulb_watt}</li>
+            <li className="list-group-item flex-fill">{bulb_watt}</li>
           </ul>
-          <ul class="list-group list-group-horizontal">
-            <li class="list-group-item flex-fill bg-light fw-bold">
+          <ul className="list-group list-group-horizontal">
+            <li className="list-group-item flex-fill bg-light fw-bold">
               Size/Weight
             </li>
-            <li class="list-group-item flex-fill">{size}</li>
+            <li className="list-group-item flex-fill">{size}</li>
           </ul>
-          <ul class="list-group list-group-horizontal">
-            <li class="list-group-item flex-fill bg-light fw-bold">
+          <ul className="list-group list-group-horizontal">
+            <li className="list-group-item flex-fill bg-light fw-bold">
               Number Of Lights
             </li>
-            <li class="list-group-item flex-fill">{number_of_lights}</li>
+            <li className="list-group-item flex-fill">{number_of_lights}</li>
           </ul>
-          <ul class="list-group list-group-horizontal">
-            <li class="list-group-item flex-fill bg-light fw-bold">Material</li>
-            <li class="list-group-item flex-fill">{material}</li>
+          <ul className="list-group list-group-horizontal">
+            <li className="list-group-item flex-fill bg-light fw-bold">
+              Material
+            </li>
+            <li className="list-group-item flex-fill">{material}</li>
           </ul>
-          <ul class="list-group list-group-horizontal">
-            <li class="list-group-item flex-fill bg-light fw-bold">Style</li>
-            <li class="list-group-item flex-fill">{style}</li>
+          <ul className="list-group list-group-horizontal">
+            <li className="list-group-item flex-fill bg-light fw-bold">
+              Style
+            </li>
+            <li className="list-group-item flex-fill">{style}</li>
           </ul>
-          <ul class="list-group list-group-horizontal">
-            <li class="list-group-item flex-fill bg-light fw-bold">
+          <ul className="list-group list-group-horizontal">
+            <li className="list-group-item flex-fill bg-light fw-bold">
               Manufactured By
             </li>
-            <li class="list-group-item flex-fill">{manufacturer}</li>
+            <li className="list-group-item flex-fill">{manufacturer}</li>
           </ul>
         </div>
 
@@ -176,7 +182,7 @@ const LampDetails = () => {
             </div>
             <button className="btn btn-prime mb-2 col-12">
               {" "}
-              <i class="fas fa-shopping-cart"></i> Buy Now
+              <i className="fas fa-shopping-cart"></i> Buy Now
             </button>
           </form>
         </div>

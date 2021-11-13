@@ -44,6 +44,14 @@ const Navigation = () => {
 
             {user?.email && (
               <li className="nav-item my-auto">
+                <Link className="nav-link" to="/dashboard">
+                  Dashboard
+                </Link>
+              </li>
+            )}
+
+            {user?.email && (
+              <li className="nav-item my-auto">
                 <span className="nav-link  text-dark">
                   Hi, {user.displayName}
                 </span>

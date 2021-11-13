@@ -1,7 +1,12 @@
-// import React from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AuthProvider from "./contexts/AuthProvider/AuthProvider";
 import About from "./pages/About/About";
+import Dashboard from "./pages/Dashboard/Dashboard/Dashboard";
+import ManageAllCarts from "./pages/Dashboard/ManageAllCarts/ManageAllCarts";
+import MyCart from "./pages/Dashboard/MyCart/MyCart";
+import Payment from "./pages/Dashboard/Payment/Payment";
+import Review from "./pages/Dashboard/Review/Review";
 import Home from "./pages/Home/Home/Home";
 import LampDetails from "./pages/Lamps/LampDetails/LampDetails";
 import Lamps from "./pages/Lamps/Lamps/Lamps";
@@ -37,6 +42,26 @@ function App() {
 
             <PrivateRoute exact path="/lamps/:lampId">
               <LampDetails></LampDetails>
+            </PrivateRoute>
+
+            <PrivateRoute exact path="/dashboard">
+              <Dashboard></Dashboard>
+            </PrivateRoute>
+
+            <PrivateRoute exact path="/payment">
+              <Payment></Payment>
+            </PrivateRoute>
+
+            <PrivateRoute exact path="/mycart">
+              <MyCart></MyCart>
+            </PrivateRoute>
+
+            <PrivateRoute exact path="/review">
+              <Review></Review>
+            </PrivateRoute>
+
+            <PrivateRoute exact path="/manageallcarts">
+              <ManageAllCarts></ManageAllCarts>
             </PrivateRoute>
 
             <Route exact path="/login">

@@ -4,7 +4,7 @@ import logo from "../../../images/logo.png";
 
 const Footer = () => {
   return (
-    <div className="bg-light mt-5">
+    <div className="bg-light">
       <div className="container pb-2">
         <div className="row justify-content-between">
           <div className="col-md-4 pt-4">

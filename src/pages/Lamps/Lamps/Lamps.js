@@ -11,7 +11,7 @@ const Lamps = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container mb-5">
       <div className="row justify-content-between g-4">
         {lamps.map((lamp) => (
           <Lamp key={lamp._id} lamp={lamp}></Lamp>

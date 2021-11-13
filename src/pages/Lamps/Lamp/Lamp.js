@@ -21,7 +21,7 @@ const Lamp = ({ lamp }) => {
             to={`/lamps/${_id}`}
             className="btn btn-border-main d-block mx-auto shadow-lg border-2 rounded-pill w-50"
           >
-            See Details <i class="fas fa-arrow-circle-right"></i>
+            See Details <i className="fas fa-arrow-circle-right"></i>
           </Link>
         </div>
       </div>
