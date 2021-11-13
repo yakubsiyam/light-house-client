@@ -71,7 +71,7 @@ const MyCart = () => {
                         className="btn btn-warning"
                         to="/mycart"
                       >
-                        Cancel Carts
+                        Cancel Cart
                       </Link>
                     </div>
                   </div>

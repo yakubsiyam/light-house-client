@@ -155,7 +155,7 @@ const LampDetails = () => {
               />
             </div>
             <div className="my-3">
-              <label htmlFor="inputPassword" className="form-label">
+              <label htmlFor="address" className="form-label">
                 Address
               </label>
               <input

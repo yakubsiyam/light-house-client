@@ -12,6 +12,9 @@ const Lamps = () => {
 
   return (
     <div className="container mb-5">
+      <h1 className="text-center fw-bold text-shadow mt-3 text-prime">
+        All Lamps
+      </h1>
       <div className="row justify-content-between g-4">
         {lamps.map((lamp) => (
           <Lamp key={lamp._id} lamp={lamp}></Lamp>

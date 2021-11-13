@@ -46,7 +46,7 @@ const ManageAllCarts = () => {
         <DashboardDrawer></DashboardDrawer>
         <div className="col-md-10 my-3">
           <h1 className="text-color text-center banner-text-shadow">
-            My Lamps
+            Manage All Lamps
           </h1>
           <section>
             <div className="row g-4 my-3">
@@ -76,7 +76,7 @@ const ManageAllCarts = () => {
                         className="btn btn-warning"
                         to="/manageallcarts"
                       >
-                        Cancel
+                        Delete Cart
                       </Link>
                       {cart.status === "pending" && (
                         <span

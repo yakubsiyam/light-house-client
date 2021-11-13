@@ -23,6 +23,10 @@ const DashboardDrawer = () => {
         <Link className="btn text-white d-block my-3" to="/manageallcarts">
           Managed All Carts
         </Link>
+
+        <Link className="btn text-white d-block my-3" to="/addnewlamp">
+          Add Lamp
+        </Link>
       </div>
     </div>
   );

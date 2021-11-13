@@ -1,6 +1,5 @@
 [
   {
-    "id": 0,
     "name": "Tiffany Hanginghead Dragonfly Light",
     "img": "https://i.ibb.co/XLtgprt/1.jpg",
     "description": "One of Tiffany Studio's most beloved designs, Dragonflies dive and circle with glowing Scarlet jeweled eyes and delicate metal filigreed emerald wings circle over hand cut and copper foiled pieces of Green and Brown leafy rippled glass over sunset colored art glass accented with colorful jewel dew drops. The matching stained glass table lamp base is decorated with glass jewels and finished in a warm hand applied mahogany bronze.",
@@ -15,7 +14,6 @@
   },
 
   {
-    "id": 1,
     "name": "Innes 2-Light Mission Table Lamp",
     "img": "https://i.ibb.co/9GGpRLp/2.jpg",
     "description": "INNES, Tiffany-style mission table lamp is handcrafted with intricate designs and made of pure stained glass piece. Distinctive design featuring rows and columns. Each piece accentuated one another to create a wonderful pallet of warmth. Coated in an antique bronze patina tone. Details abound from the base to the top anchor. Expertly crafted with top quality materials. Great addition to any office or home.",
@@ -30,7 +28,6 @@
   },
 
   {
-    "id": 2,
     "name": "Tower Table Lamp",
     "img": "https://i.ibb.co/3hykH91/3.jpg",
     "description": "Warmly illuminate your home with the Tower Table Lamp. Featuring a sturdy, artisanal base in a cherry finish with a walnut trim and an amber mica shade, the Tower Table Lamp will easily enhance your space and is an ideal fit for any craftsman styled room. This lamp has 2 pull chain sockets and uses 75 watt bulbs and measures 26 inches tall, perfect to make a stylish impact on a side table in a living room or a bedroom. The Tower Table Lamp is made in the USA from the finest hardwood.",
@@ -45,7 +42,6 @@
   },
 
   {
-    "id": 3,
     "name": "Akron Tower Mission Tiffany Table Lamp",
     "img": "https://i.ibb.co/tHxFJhk/4.jpg",
     "description": "Our Akron Tower Tiffany Mission Table Lamp features a turn of the century arts and crafts style that will easily assimilate into any décor. The fixture features a square mission shade with a light amber background. Each side is adorned with a mission style geometric design in complementary colors. A wide band of deep amber near the shade?s bottom provides an extra pop of warm color. The tower style base is finished in Antique Bronze and features architectural elements that complement the mission style. Great for dens, offices and bedrooms, our Akron Tower Tiffany Mission Table Lamp is crafted to last to provide you with years of stylish lighting.",
@@ -60,7 +56,6 @@
   },
 
   {
-    "id": 4,
     "name": "DEMOISELLE Mosaic 1-Light Dark Bronze Accent Lamp",
     "img": "https://i.ibb.co/pxtZ95N/5.jpg",
     "description": "DEMOISELLE, a Mosaic style 1 light table lamp features a globe shade with 4 beautiful dragonflies, and bright ambient lighting, consisting of yellow and light-orange. This piece is handcrafted from over 210 pieces of hand cut, stained art glass and 44 colorful glass beads. Handcrafted using the same techniques that were developed by Louis Comfort Tiffany in the early 1900s, this beautiful Tiffany-style piece contains hand-cut pieces of stained glass, each wrapped in fine copper foil.",
@@ -75,7 +70,6 @@
   },
 
   {
-    "id": 5,
     "name": "Edith 12 Light Butterfly Table Lamp",
     "img": "https://i.ibb.co/BPJmYby/6.jpg",
     "description": "This Tiffany style butterfly design 2-light table lamp features a dark bronze finish. Hand crafted from over 200 individually hand cut pieces of art glass that will add color and beauty to any room.Additional Warning or Disclaimer: Since these are hand crafted products, the exact color of glass pieces may vary. Colors of the glass will appear darker and less vibrant when not illuminated. Handmade glass will vary from one piece to the other; glass made at different times will also vary. Light bulbs used in lamps or ambient lighting may affect the appearance of the products",
@@ -90,7 +84,6 @@
   },
 
   {
-    "id": 6,
     "name": "Hampton Hill Fulton Table Lamp",
     "img": "https://i.ibb.co/FbwwqNk/7.jpg",
     "description": "Define your space with the decadence of Hampton Hill��s Fulton Table Lamp. The steel and concrete base flaunts a gold metal finish that spirals around itself for a glitzy look. A fabric drum-shaped shade lavishly complements the base with its gold hue. The 72-inch clear cord provides plenty of length to place the lamp in your living room or bedroom for extra light, while a switch located on the socket allows you to easily turn the light on and off. Ornate in design, this metal table lamp gives your d��cor an eye-catching and luxurious touch. One spiral CFL light bulb is included. One 60-watt incandescent bulb or one 13-watt CFL light bulb is needed. Comes with a 2-year warranty.",
@@ -103,8 +96,8 @@
     "style": "Transitional",
     "manufacturer": "Hampton Hill"
   },
+
   {
-    "id": 7,
     "name": "Stein World Jaela Table Lamp",
     "img": "https://i.ibb.co/MSqtYGn/8.jpg",
     "description": "The Jaela table lamp stands out from the crowd and boasts a raised diamond and leaf carved base; a gold, silver and coppery metallic finish; a stair step footed platform base; and a cream cut corner softback shade. Jaela Resin Table Lamp Product Meet UL General Coverage RequirementsThree-way switchRaised DiamondLeaf Curved BaseStair Step Footed Platform BaseSquare cut corner bell shade.",
@@ -119,7 +112,6 @@
   },
 
   {
-    "id": 8,
     "name": "Uttermost Pero Lamp",
     "img": "https://i.ibb.co/nQ1ZStW/9.jpg",
     "description": "Add transitional style to your space with the Uttermost Pero Lamp, shown here in sapphire blue. This piece features a ceramic finish in a blue glaze and brushed nickel details and a crystal finial. The round shade is made of white linen fabric.",
@@ -134,7 +126,6 @@
   },
 
   {
-    "id": 9,
     "name": "Chicago Table Lamp",
     "img": "https://i.ibb.co/F08nRty/10.jpg",
     "description": "Beautifully handcrafted to reflect a contemporary design inspired by craftsman style, the Chicago Table Lamp will never go unnoticed in your home. This table lamp includes a multi-colored maple wood base with cherry trim and features a striking green copper patina shade. Measuring 26 inches tall, the Chicago is perfect to make a stylish impact on a nightstand in your bedroom or a side table in your living space, especially with its sleek and contrasting base. The lamp has 2 pull chain sockets and uses 75 watt bulbs in each socket, sure to cast a soft and colorful glow in your living space. The Chicago Table Lamp is made in the USA from the finest hardwood.",
@@ -149,7 +140,6 @@
   },
 
   {
-    "id": 10,
     "name": "Dressage Lady Lamp",
     "img": "https://i.ibb.co/xsMPqqB/11.jpg",
     "description": "This lovely Dressage Lady Lamp is a traditional style bronze dressage lady lamp with a linen shade, 3 way 100 watt max.It requires one bulb, which is not included.It measures 19 inches wide, 13 inches deep, and 25 inches high, and is made of resin. This gorgeous piece is perfect for a home with a traditional or even transitional style decor!Made in the USA.",
@@ -164,7 +154,6 @@
   },
 
   {
-    "id": 11,
     "name": "Vergato Free Blown Glass Table Lamp",
     "img": "https://i.ibb.co/mRGvhj0/12.jpg",
     "description": "Using Centuries Old Techniques First Employed By The Artisans Of Murano This Free Blown Glass Table Lamp In Amber Is Finished With A Double Pull Chain And Orange Faux Silk Shade With White Fabric Liner. At Houzz we want you to shop for Dimond Lighting 24' Vergato Free Blown Glass LED Table Lamp, Purple w/ Purple Faux Silk Shade with confidence.",
