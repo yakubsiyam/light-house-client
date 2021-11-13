@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 
 const DashboardDrawer = () => {
-  const { logout } = useAuth();
+  const { logout, isAdmin } = useAuth();
   return (
     <div className="col-md-2">
       <div className="dashboard-bg text-start p-3 h-100">
@@ -18,6 +18,10 @@ const DashboardDrawer = () => {
         </Link>
         <Link className="btn text-white d-block my-3" to="/" onClick={logout}>
           Logout
+        </Link>
+
+        <Link className="btn text-white d-block my-3" to="/makeadmin">
+          Make Admin
         </Link>
 
         <Link className="btn text-white d-block my-3" to="/manageallcarts">

@@ -1,19 +1,11 @@
 import axios from "axios";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import { useHistory } from "react-router";
 import useAuth from "../../../hooks/useAuth";
 import DashboardDrawer from "../DashboardDrawer/DashboardDrawer";
 
 const Review = () => {
   const { user } = useAuth();
-
-  const [reviews, setReviews] = useState([]);
-
-  useEffect(() => {
-    fetch("https://fierce-meadow-98744.herokuapp.com/reviews")
-      .then((res) => res.json())
-      .then((data) => setReviews(data));
-  }, []);
 
   const refReview = useRef();
   const refRating = useRef();
@@ -64,11 +56,14 @@ const Review = () => {
               />
             </div>
             <div className="my-3">
-              <label htmlFor="exampleFormControlTextarea1" class="form-label">
+              <label
+                htmlFor="exampleFormControlTextarea1"
+                className="form-label"
+              >
                 Review
               </label>
               <textarea
-                class="form-control"
+                className="form-control"
                 id="exampleFormControlTextarea1"
                 rows="3"
                 placeholder="Your Review"

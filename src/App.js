@@ -4,6 +4,7 @@ import AuthProvider from "./contexts/AuthProvider/AuthProvider";
 import About from "./pages/About/About";
 import AddNewLamp from "./pages/Dashboard/AddNewLamp/AddNewLamp";
 import Dashboard from "./pages/Dashboard/Dashboard/Dashboard";
+import MakeAdmin from "./pages/Dashboard/MakeAdmin/MakeAdmin";
 import ManageAllCarts from "./pages/Dashboard/ManageAllCarts/ManageAllCarts";
 import MyCart from "./pages/Dashboard/MyCart/MyCart";
 import Payment from "./pages/Dashboard/Payment/Payment";
@@ -11,6 +12,7 @@ import Review from "./pages/Dashboard/Review/Review";
 import Home from "./pages/Home/Home/Home";
 import LampDetails from "./pages/Lamps/LampDetails/LampDetails";
 import Lamps from "./pages/Lamps/Lamps/Lamps";
+import AdminRoute from "./pages/login/AdminRoute/AdminRoute";
 import Login from "./pages/login/Login/Login";
 import PrivateRoute from "./pages/login/PrivateRoute/PrivateRoute";
 import Register from "./pages/login/Register/Register";
@@ -68,6 +70,10 @@ function App() {
             <PrivateRoute exact path="/addnewlamp">
               <AddNewLamp></AddNewLamp>
             </PrivateRoute>
+
+            <AdminRoute exact path="/makeadmin">
+              <MakeAdmin></MakeAdmin>
+            </AdminRoute>
 
             <Route exact path="/login">
               <Login></Login>

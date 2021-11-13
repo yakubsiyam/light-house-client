@@ -5,8 +5,6 @@ import {
   signInWithEmailAndPassword,
   onAuthStateChanged,
   signOut,
-  GoogleAuthProvider,
-  signInWithPopup,
   updateProfile,
 } from "firebase/auth";
 import initializeFirebase from "../pages/login/Firebase/firebase.init";
@@ -20,7 +18,6 @@ const useFirebase = () => {
   const [authError, setAuthError] = useState("");
 
   const auth = getAuth();
-  const googleProvider = new GoogleAuthProvider();
 
   const registerUser = (email, password, name, location, history) => {
     setIsLoading(true);
@@ -28,6 +25,9 @@ const useFirebase = () => {
       .then((userCredential) => {
         const newUser = { email, displayName: name };
         setUser(newUser);
+        saveUser(email, name, false);
+
+        saveUser(email, name, "POST", "user");
 
         // send name to firebase after creation
         updateProfile(auth.currentUser, {
@@ -60,20 +60,6 @@ const useFirebase = () => {
       .finally(() => setIsLoading(false));
   };
 
-  const signInWithGoogle = (location, history) => {
-    setIsLoading(true);
-    signInWithPopup(auth, googleProvider)
-      .then((result) => {
-        setAuthError("");
-        const destination = location?.state?.from || "/";
-        history?.replace(destination);
-      })
-      .catch((error) => {
-        setAuthError(error.message);
-      })
-      .finally(() => setIsLoading(false));
-  };
-
   // observer user state
   useEffect(() => {
     const unsubscribed = onAuthStateChanged(auth, (user) => {
@@ -99,13 +85,33 @@ const useFirebase = () => {
       .finally(() => setIsLoading(false));
   };
 
+  const saveUser = (email, name, method, role) => {
+    const user = { email, name, role };
+    fetch("https://fierce-meadow-98744.herokuapp.com/users", {
+      method: method,
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(user),
+    }).then();
+  };
+
+  const [admin, setAdmin] = useState(false);
+  useEffect(() => {
+    fetch(`https://fierce-meadow-98744.herokuapp.com/users?email=${user.email}`)
+      .then((res) => res.json())
+      .then((data) => setAdmin(data));
+  }, [user.email]);
+
+  const isAdmin = admin?.role === "admin" ? true : false;
+
   return {
     user,
+    isAdmin,
     isLoading,
     authError,
     registerUser,
     loginUser,
-    signInWithGoogle,
     logout,
   };
 };
