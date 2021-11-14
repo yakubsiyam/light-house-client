@@ -7,7 +7,34 @@ const DashboardDrawer = () => {
   return (
     <div className="col-md-2">
       <div className="dashboard-bg text-start p-3 h-100">
-        <Link className="text-white btn d-block" to="/mycart">
+        {admin ? (
+          <span>
+            <Link className="btn text-white d-block my-3" to="/makeadmin">
+              Make Admin
+            </Link>
+
+            <Link className="btn text-white d-block my-3" to="/manageallcarts">
+              Managed All Carts
+            </Link>
+
+            <Link className="btn text-white d-block my-3" to="/addnewlamp">
+              Add Lamp
+            </Link>
+          </span>
+        ) : (
+          <span>
+            <Link className="text-white btn d-block" to="/mycart">
+              My Cart
+            </Link>
+            <Link className="btn text-white d-block my-3" to="/payment">
+              Payment
+            </Link>
+            <Link className="btn text-white d-block my-3" to="/review">
+              Review
+            </Link>
+          </span>
+        )}
+        {/* <Link className="text-white btn d-block" to="/mycart">
           My Cart
         </Link>
         <Link className="btn text-white d-block my-3" to="/payment">
@@ -15,16 +42,13 @@ const DashboardDrawer = () => {
         </Link>
         <Link className="btn text-white d-block my-3" to="/review">
           Review
-        </Link>
-        <Link className="btn text-white d-block my-3" to="/" onClick={logout}>
-          Logout
-        </Link>
+        </Link> */}
 
-        {admin && (
+        {/* {admin && (
           <Link className="btn text-white d-block my-3" to="/makeadmin">
             Make Admin
           </Link>
-        )}
+        )} */}
         {/* <Link className="btn text-white d-block my-3" to="/makeadmin">
           Make Admin
         </Link>
@@ -36,6 +60,9 @@ const DashboardDrawer = () => {
         <Link className="btn text-white d-block my-3" to="/addnewlamp">
           Add Lamp
         </Link> */}
+        <Link className="btn text-white d-block my-3" to="/" onClick={logout}>
+          Logout
+        </Link>
       </div>
     </div>
   );

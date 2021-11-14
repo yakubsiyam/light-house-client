@@ -63,13 +63,13 @@ function App() {
               <Review></Review>
             </PrivateRoute>
 
-            <PrivateRoute exact path="/manageallcarts">
+            <AdminRoute exact path="/manageallcarts">
               <ManageAllCarts></ManageAllCarts>
-            </PrivateRoute>
+            </AdminRoute>
 
-            <PrivateRoute exact path="/addnewlamp">
+            <AdminRoute exact path="/addnewlamp">
               <AddNewLamp></AddNewLamp>
-            </PrivateRoute>
+            </AdminRoute>
 
             <AdminRoute exact path="/makeadmin">
               <MakeAdmin></MakeAdmin>
