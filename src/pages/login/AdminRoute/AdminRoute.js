@@ -3,7 +3,7 @@ import { Route, Redirect } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 
 const AdminRoute = ({ children, ...rest }) => {
-  const { user, isAdmin, isLoading } = useAuth();
+  const { user, admin, isLoading } = useAuth();
   if (isLoading) {
     return (
       <div className="d-flex justify-content-center">
@@ -17,12 +17,12 @@ const AdminRoute = ({ children, ...rest }) => {
     <Route
       {...rest}
       render={({ location }) =>
-        user.email && isAdmin ? (
+        user.email && admin ? (
           children
         ) : (
           <Redirect
             to={{
-              pathname: "/",
+              pathname: "/notfound",
               state: { from: location },
             }}
           />

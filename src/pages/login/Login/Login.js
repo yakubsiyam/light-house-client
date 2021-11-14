@@ -4,7 +4,7 @@ import useAuth from "../../../hooks/useAuth";
 
 const Login = () => {
   const [loginData, setLoginData] = useState({});
-  const { user, loginUser, isLoading, authError } = useAuth();
+  const { user, loginUser, signInWithGoogle, isLoading, authError } = useAuth();
 
   const location = useLocation();
   const history = useHistory();
@@ -15,6 +15,10 @@ const Login = () => {
     const newLoginData = { ...loginData };
     newLoginData[field] = value;
     setLoginData(newLoginData);
+  };
+
+  const handleGoogleLogin = () => {
+    signInWithGoogle(location, history);
   };
 
   const handleLoginSubmit = (e) => {
@@ -61,6 +65,13 @@ const Login = () => {
               Create Account
             </Link>
           </p>
+          <p className="text-secondary text-center">or</p>
+          <button
+            className="btn btn-google d-block mx-auto shadow-lg border-2"
+            onClick={handleGoogleLogin}
+          >
+            <i className=" fab fa-google"></i> Login with Google
+          </button>
 
           {/* spinner */}
           {isLoading && (

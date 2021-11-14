@@ -26,7 +26,7 @@ const LampDetails = () => {
     fetch(`https://fierce-meadow-98744.herokuapp.com/lamps/${lampId}`)
       .then((res) => res.json())
       .then((data) => setLamp(data));
-  }, []);
+  }, [lampId]);
 
   const refAddress = useRef();
   const refPhone = useRef();

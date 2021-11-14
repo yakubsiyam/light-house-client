@@ -17,7 +17,7 @@ const MyCart = () => {
     )
       .then((res) => res.json())
       .then((data) => setCarts(data));
-  }, []);
+  }, [currentUserEmail]);
 
   const cancelLamps = (id) => {
     const proceed = window.confirm(

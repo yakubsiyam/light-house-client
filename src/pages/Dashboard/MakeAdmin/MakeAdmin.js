@@ -9,7 +9,7 @@ const MakeAdmin = () => {
 
   const handleAdminSubmit = (e) => {
     const user = { email };
-    fetch("https://fierce-meadow-98744.herokuapp.com/users", {
+    fetch("https://fierce-meadow-98744.herokuapp.com/users/admin", {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -19,7 +19,7 @@ const MakeAdmin = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.modifiedCount) {
-          alert("Admin Sucessfully");
+          alert("Admin added Sucessfully");
         }
       });
     e.preventDefault();
@@ -44,6 +44,7 @@ const MakeAdmin = () => {
                 id="exampleFormControlInput1"
                 placeholder="Your email"
                 name="email"
+                onBlur={handleOnBlur}
                 required
               />
             </div>
